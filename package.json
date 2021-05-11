@@ -1,0 +1,16 @@
+{
+  "name": "@ootiq/tailwind-blandcolors",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "Unlicense",
+  "peerDependencies": {
+    "tailwindcss": "^2.1.2"
+  },
+  "repository": "ootiq/tailwind-blandcolors",
+  "scripts": {
+    "sample:build:css": "npx tailwindcss-cli@latest build -o tailwind.css"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

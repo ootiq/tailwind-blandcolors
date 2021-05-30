@@ -1,22 +1,11 @@
 const plugin = require("tailwindcss/plugin")
 const defaultTheme = require("tailwindcss/defaultTheme")
-
-let blandColors = generateBlandColors()
-
-function generateBlandColors() {
-    let c = {}
-    for (let index = 1; index < 10; index++) {
-        c[`${index}00`] = `rgba(0, 0, 0, 0.${index})`
-    }
-
-    return c
-}
-
+const colors = require('./colors.js')
 
 module.exports = plugin(function() {}, {
     theme: {
         colors: {
-            bland: blandColors,
+            ...colors,
             ...defaultTheme.colors,
         }        
     }

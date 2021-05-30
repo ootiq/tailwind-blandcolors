@@ -1,5 +1,6 @@
 {
   "name": "@ootiq/tailwind-blandcolors",
+  "description": "Use bland colors. Such as rgba(0, 0, 0, 0.5) ...",
   "version": "0.0.3",
   "main": "index.js",
   "license": "Unlicense",
@@ -8,7 +9,7 @@
   },
   "repository": "ootiq/tailwind-blandcolors",
   "scripts": {
-    "sample:build:css": "npx tailwindcss-cli@latest build -o tailwind.css"
+    "sample:build:css": "npx tailwindcss-cli@latest build -o ./sample/tailwind.css"
   },
   "publishConfig": {
     "access": "public"
